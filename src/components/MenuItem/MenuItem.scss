@@ -18,7 +18,7 @@
         }
         
         & .menu-item__content {
-            opacity: .9;
+            background-color: rgba(#ffffff, .9);
         }
     }
     
@@ -41,8 +41,7 @@
 
     &__content {
         position: absolute;
-        background-color: #fff;
-        opacity: .7;
+        background-color: rgba(#ffffff, .7);
         height: 90px;
         padding: 0 25px;
         display: flex;
