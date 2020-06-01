@@ -24,4 +24,4 @@ const MenuItem = ({ title, img, size, history, url, match }) => {
     );
 };
 
-export default withRouter(MenuItem); // withRouter will return component with history prop
+export default withRouter(MenuItem); // withRouter returns HOC with history prop

@@ -12,35 +12,35 @@ class Menu extends Component {
                 {
                     id: 1,
                     title: 'Дрели',
-                    img: 'https://storgom.ua/uploads/gallery/I/dreli_500x400.jpg',
-                    url: 'drill',
+                    imgUrl: 'images/drills.jpg',
+                    routeName: 'drills',
                 },
                 {
                     id: 2,
                     title: 'Отвертки',
-                    img: 'https://static-eu.insales.ru/images/products/1/7923/61366003/0-65-013.jpg',
-                    url: 'screwdriver',
+                    imgUrl: 'images/screwdrivers.jpg',
+                    routeName: 'screwdrivers',
 
                 },
                 {
                     id: 3,
                     title: 'Аккумуляторы',
-                    img: 'https://lh3.googleusercontent.com/proxy/ChhxIyNtZ72NGJteiClzPmkM9zbVjjqto07OEO4axw8rAvBkAPxzRle-r9U3frS_fbwp9bOs1kOgbnfQirs',
-                    url: 'accumulator',
+                    imgUrl: 'images/accumulators.jpg',
+                    routeName: 'accumulators',
                 },
                 {
                     id: 4,
                     title: 'Спецодежда',
-                    img: 'https://www.technoavia.ru/img/ta_photo_office/offise/83_2big.jpg',
+                    imgUrl: 'images/spec_clothes.jpg',
                     size: 'large',
-                    url: 'coverall',
+                    routeName: 'spec-clothes',
                 },
                 {
                     id: 5,
                     title: 'Инструменты',
-                    img: 'https://www.iphones.ru/wp-content/uploads/2016/04/tools.jpg',
+                    imgUrl: 'images/tools.jpg',
                     size: 'large',
-                    url: 'instruments',
+                    routeName: 'tools',
                 },
             ],
         }
@@ -49,7 +49,7 @@ class Menu extends Component {
     render() {
         return (
             <div className="menu">
-                {this.state.sections.map((section) => <MenuItem key={section.id} title={section.title} img={section.img} size={section.size} url={section.url} />)}
+                {this.state.sections.map((section) => <MenuItem key={section.id} title={section.title} img={section.imgUrl} size={section.size} url={section.routeName} />)}
             </div>
         );
     } 
